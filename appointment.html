@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Girls - Appointment Form</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <script>
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Open the loading page
+            window.location.href = 'loading.html';
+
+            // Redirect to index.html after 3 seconds
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 3000);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="shadow-bg">
+        <div class="container">
+            <h1 class="mb-3 text-white navbar-brand"><span class="logo">Vogue</span>Glow</h1>
+            <form class="appointment-form" onsubmit="handleSubmit(event)" method="POST">
+                <h2>Book an Appointment</h2>
+
+                <div class="form-grid">
+                    <div class="input-box">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required placeholder="full name">
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="number">
+                    </div>
+
+                    <div class="input-box full-width">
+                        <label for="services">Choose a Service*</label>
+                        <select id="services" name="services" onchange="toggleServices()" required>
+                            <option value="">Select a Service</option>
+                            <option value="hair_care">Hair Care</option>
+                            <option value="skin_care">Skin Care</option>
+                            <option value="nail_care">Nail Care</option>
+                            <option value="spa_treatments">Spa Treatments</option>
+                            <option value="makeup">Makeup</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="date">Preferred Date*</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="input-box full-width">
+                        <label for="time">Preferred Time*</label>
+                        <div class="time-selection">
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="input-box full-width">
+                        <label for="professionals">Choose a Professional*</label>
+                        <select id="professionals" name="professionals" required>
+                            <option value="">Select a Professional</option>
+                            <option value="professional_1">Professional 1</option>
+                            <option value="professional_2">Professional 2</option>
+                            <option value="professional_3">Professional 3</option>
+                        </select>
+                    </div>
+                    <div class="input-box full-width">
+                        <label for="notes">Address</label>
+                        <textarea id="notes" name="notes" placeholder="Address..."></textarea>
+                    </div>
+                </div>
+
+                <div class="register-btn-container">
+                    <button type="submit" class="submit-btn">Book Appointment</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

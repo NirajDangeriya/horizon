@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #e1bb87;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.sec-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    color: #1C1C1C;
+    border-radius: 15px 0px 15px 0px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.sec-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #e1bb87;
+    border-radius: 15px 0px 0px 0px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.sec-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background: #e1bb87;
+    border-radius: 0px 0px 15px 0px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.sec-btn:hover:before,
+.sec-btn:hover:after {
+    width: 50%;
+    transition: 0.5s;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            navbar section start                            */
+/* -------------------------------------------------------------------------- */
+
+nav{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav-link{
+    font-size: 2.6rem;
+    color: #e1bb87;
+    font-weight: 400;
+}
+
+.dropdown-item{
+    font-size: 2rem;
+    color: #e1bb87;
+    font-weight: 400;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                             navbar section end                             */
+/* -------------------------------------------------------------------------- */
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    margin-top: 10rem;
+}
+
+.header h1 {
+    font-size: 5rem;
+    color: #ffcc99;
+}
+
+.header p {
+    color: #ddd;
+    font-size: 2.4rem;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+/* Service Card */
+.service-card {
+    background-color: #222;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    border: 2px solid #e1bb87;
+}
+
+.service-card img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-info {
+    padding: 20px;
+}
+
+.service-info h2 {
+    font-size: 2.6rem;
+    color: #ffcc99;
+}
+
+.service-info p {
+    margin-top: 1rem;
+    color: #ddd;
+    font-size: 1.4rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            footer section start                            */
+/* -------------------------------------------------------------------------- */
+
+footer{
+    background-color: #1C1C1C;
+}
+.navbar-brand h1{
+    font-size: 5rem;
+}
+
+.logo{
+    color: #E1BB87;
+}
+
+.link-title{
+    font-size: 2.5rem;
+}
+
+.footer-link{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #E1BB87;
+}
+
+.footer-link:hover{
+    color: #fff;
+}
+
+.title {
+    position: relative;
+}
+
+.title h3.h3-title {
+    position: absolute;
+    top: 63px;
+    left: 15px;
+    text-transform: capitalize;
+    color: #E1BB87;
+    font-size: 30px;
+    line-height: 53px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                             footer section end                             */
+/* -------------------------------------------------------------------------- */
